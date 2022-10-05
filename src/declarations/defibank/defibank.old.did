@@ -1,5 +1,6 @@
 service : {
-  checkbalance: () -> (nat) query;
-  topUp: (nat) -> () oneway;
-  withDraw: (nat) -> () oneway;
+  checkbalance: () -> (float64) query;
+  compound: () -> () oneway;
+  topUp: (float64) -> () oneway;
+  withDraw: (float64) -> () oneway;
 }
